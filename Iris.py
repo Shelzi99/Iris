@@ -1,7 +1,7 @@
 flower_dict = {}
 flower_name = ''
 height = 0
-iris = 'iris.txt'
+iris = 'iris2.txt'
 temp_height = 0
 temp_name = ''
 
@@ -44,7 +44,7 @@ with open(iris, 'r') as reading_file:
             #add flower to dictionary
             if flower_name != '':
                 add_to_dict(flower_name, height)
-                height = temp_height
+                height = float(temp_height)
                 flower_name = temp_name
             else:
                 flower_name = temp_name
