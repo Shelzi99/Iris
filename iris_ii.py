@@ -17,7 +17,7 @@ def get_tempheigh_and_tempname_in_line(line):
     global temp_height
 
     index = line.rfind(",")
-    temp_name = line[index+1:]
+    temp_name = line[index+1:].strip()
     temp_line = line[:index]
     index = temp_line.rfind(",")
     temp_height = temp_line[index+1:]
